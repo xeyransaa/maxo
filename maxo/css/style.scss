@@ -1,0 +1,328 @@
+.bluetoWhite{
+    text-decoration: none;
+    padding: 15px 35px;
+    background-color: #42D9E4;
+    color: white;
+    border-radius: 6px;
+    position: relative;
+    
+    span{
+        background-color: transparent;
+        position: relative;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 0%;
+        height: 100%;
+        transition: 0.5s ease-in-out;
+        background-color: white;
+        border-radius: 6px;
+ 
+    }
+    &:hover{
+        
+        color: black;
+        
+        &::before{
+            width: 100%;
+        }
+    }
+}
+.blacktoWhite{
+    text-decoration: none;
+    padding: 13px 40px;
+    background-color:transparent;
+    color: white;
+    border-radius: 6px;
+    position: relative;
+    border: 2px solid white;
+    
+    span{
+        background-color: transparent;
+        position: relative;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 0%;
+        height: 100%;
+        transition: 0.5s ease-in-out;
+        background-color: white;
+        border-radius: 4px;
+ 
+    }
+    &:hover{
+        
+        color: black;
+        
+        &::before{
+            width: 100%;
+        }
+    }
+
+}
+#header{
+    background-image: url(http://www.themesindustry.com/html/maxo/images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    .top-header{
+        .logo{
+            width: 9%;
+            img{
+                width: 100%;
+                padding-top: 15px;
+            }
+        }
+        .menu{
+            ul{
+               
+                li{
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        padding: 20px 30px;
+                        display: block;
+                        position: relative;
+                        font-size: 14px;
+                        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-weight: 600;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            left: 50%;
+                            right: 50%;
+                            width: 0%;
+                            height: 5px;
+                            background-color: #42D9E4;
+                            transition: 0.5s ease-in-out;
+                        }
+                        &:hover{
+                            &::before{
+                                content: "";
+                                left: 30px;
+                                right: 30px;
+                                width: auto;
+                            }
+                        }
+
+                    }
+                    &.home{
+                        a{
+                            &::before{
+            
+                            left: 30px;
+                            right: 30px;
+                            width: auto;
+                            height: 5px;
+                            
+                            }
+                        }
+                    }
+                    i{
+                        color: white;
+                        font-size: 20px;
+                        margin-left: 20px;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-header{
+        padding-top: 15%;
+        text-align: center;
+        .bot-div{
+            h1{
+                color: white;
+                font-size: 50px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                width: 60%;
+                margin: auto;
+                font-weight: 100;
+                margin-bottom: 60px;
+                span{
+                    font-weight: 500;
+                }
+            }
+            .bluetoWhite{
+                margin-right: 20px;
+            }
+            
+        }
+    }
+}
+.features{
+    padding: 5% 0;
+    text-align: center;
+    p{
+        color: #666666;
+        font-size: 16px;
+        margin-bottom: 5px;
+        
+    }
+    h1{
+        font-size: 40px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        margin-bottom: 40px;
+        color: #515A5F;
+
+    }
+    .feature{
+        width: 32%;
+        border: 1px solid rgba(128, 128, 128, 0.315);
+        padding: 35px 15px;
+        margin-bottom: 20px;
+        transition: 0.5s ease-in-out;
+        
+        i{
+            color: #42D9E4;
+            font-size: 40px;
+            margin-bottom: 25px;
+            transition: 0.5s ease-in-out;
+            
+        }
+        h3{
+            color: #515A5F;
+            margin-bottom: 20px;
+            transition: 0.5s ease-in-out;
+        }
+        p{
+            color: #666666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: #42D9E4;
+            
+            p{
+                color: white;
+
+            }
+            h3{
+                color: white;
+            }
+            i{
+                transform: translateY(-5px);
+                color: white;
+            }
+        }
+    }
+}
+
+.creative{
+    .creative-img{
+        background-image: url(http://www.themesindustry.com/html/maxo/images/bghalf-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .creative-text{
+        padding: 120px 50px;
+        background-color: #F1F1F1;
+        h1{
+            font-size: 50px;
+            color: #515A5F;
+            margin-bottom: 50px;
+        }
+        .profile{
+            margin-bottom: 20px;
+            .profile-img{
+                width: 15%;
+                margin-right: 30px;
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                    border: 2px solid #515A5F;
+                }
+            }
+            .profile-name{
+                h4{
+                    font-size: 18px;
+            color: #515A5F;
+                }
+                p{
+                    font-size: 12px;
+                    color: #666666;
+                }
+            }
+        }
+        p{
+            font-size: 16px;
+            color: #666666;
+            padding-right: 30px;
+            line-height: 1.5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    }
+}
+.portfolio{
+    padding: 80px 0;
+    .portfolio-top{
+        .portfolio-top-left{
+            p{
+                color: #666666;
+                font-size: 16px;
+            }
+            h3{
+                font-size: 50px;
+                color: #515A5F;
+            }
+        }
+        .portfolio-top-right{
+            li{
+                a{
+                    padding: 20px 0;
+                    text-decoration: none;
+                    color: #515A5F;
+                    font-weight: 600;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        height: 5px;
+                        background-color: #42D9E4;
+                    }
+                    &.web{
+                        
+                        &::before{
+                            content: "-";
+                            padding: 0 15px;
+                        }
+                        &::after{
+                            content: "";
+                            left: 60%;
+                            right: 40%;
+                            width: 0%;
+                            transition: 0.5s ease-in-out;
+                        }
+                        &:hover{
+                            &::after{
+                                content: "";
+                                left: 35px;
+                                right: 0;
+                                width: auto;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

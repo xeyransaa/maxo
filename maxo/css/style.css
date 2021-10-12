@@ -1,0 +1,332 @@
+.bluetoWhite {
+  text-decoration: none;
+  padding: 15px 35px;
+  background-color: #42D9E4;
+  color: white;
+  border-radius: 6px;
+  position: relative;
+}
+
+.bluetoWhite span {
+  background-color: transparent;
+  position: relative;
+}
+
+.bluetoWhite::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.bluetoWhite:hover {
+  color: black;
+}
+
+.bluetoWhite:hover::before {
+  width: 100%;
+}
+
+.blacktoWhite {
+  text-decoration: none;
+  padding: 13px 40px;
+  background-color: transparent;
+  color: white;
+  border-radius: 6px;
+  position: relative;
+  border: 2px solid white;
+}
+
+.blacktoWhite span {
+  background-color: transparent;
+  position: relative;
+}
+
+.blacktoWhite::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.blacktoWhite:hover {
+  color: black;
+}
+
+.blacktoWhite:hover::before {
+  width: 100%;
+}
+
+#header {
+  background-image: url(http://www.themesindustry.com/html/maxo/images/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+}
+
+#header .top-header .logo {
+  width: 9%;
+}
+
+#header .top-header .logo img {
+  width: 100%;
+  padding-top: 15px;
+}
+
+#header .top-header .menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 30px;
+  display: block;
+  position: relative;
+  font-size: 14px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+#header .top-header .menu ul li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  right: 50%;
+  width: 0%;
+  height: 5px;
+  background-color: #42D9E4;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#header .top-header .menu ul li a:hover::before {
+  content: "";
+  left: 30px;
+  right: 30px;
+  width: auto;
+}
+
+#header .top-header .menu ul li.home a::before {
+  left: 30px;
+  right: 30px;
+  width: auto;
+  height: 5px;
+}
+
+#header .top-header .menu ul li i {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+#header .top-header .menu ul li i:hover {
+  cursor: pointer;
+}
+
+#header .bottom-header {
+  padding-top: 15%;
+  text-align: center;
+}
+
+#header .bottom-header .bot-div h1 {
+  color: white;
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 60%;
+  margin: auto;
+  font-weight: 100;
+  margin-bottom: 60px;
+}
+
+#header .bottom-header .bot-div h1 span {
+  font-weight: 500;
+}
+
+#header .bottom-header .bot-div .bluetoWhite {
+  margin-right: 20px;
+}
+
+.features {
+  padding: 5% 0;
+  text-align: center;
+}
+
+.features p {
+  color: #666666;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.features h1 {
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #515A5F;
+}
+
+.features .feature {
+  width: 32%;
+  border: 1px solid rgba(128, 128, 128, 0.315);
+  padding: 35px 15px;
+  margin-bottom: 20px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.features .feature i {
+  color: #42D9E4;
+  font-size: 40px;
+  margin-bottom: 25px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.features .feature h3 {
+  color: #515A5F;
+  margin-bottom: 20px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.features .feature p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.features .feature:hover {
+  cursor: pointer;
+  background-color: #42D9E4;
+}
+
+.features .feature:hover p {
+  color: white;
+}
+
+.features .feature:hover h3 {
+  color: white;
+}
+
+.features .feature:hover i {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  color: white;
+}
+
+.creative .creative-img {
+  background-image: url(http://www.themesindustry.com/html/maxo/images/bghalf-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.creative .creative-text {
+  padding: 120px 50px;
+  background-color: #F1F1F1;
+}
+
+.creative .creative-text h1 {
+  font-size: 50px;
+  color: #515A5F;
+  margin-bottom: 50px;
+}
+
+.creative .creative-text .profile {
+  margin-bottom: 20px;
+}
+
+.creative .creative-text .profile .profile-img {
+  width: 15%;
+  margin-right: 30px;
+}
+
+.creative .creative-text .profile .profile-img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #515A5F;
+}
+
+.creative .creative-text .profile .profile-name h4 {
+  font-size: 18px;
+  color: #515A5F;
+}
+
+.creative .creative-text .profile .profile-name p {
+  font-size: 12px;
+  color: #666666;
+}
+
+.creative .creative-text p {
+  font-size: 16px;
+  color: #666666;
+  padding-right: 30px;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.portfolio {
+  padding: 80px 0;
+}
+
+.portfolio .portfolio-top .portfolio-top-left p {
+  color: #666666;
+  font-size: 16px;
+}
+
+.portfolio .portfolio-top .portfolio-top-left h3 {
+  font-size: 50px;
+  color: #515A5F;
+}
+
+.portfolio .portfolio-top .portfolio-top-right li a {
+  padding: 20px 0;
+  text-decoration: none;
+  color: #515A5F;
+  font-weight: 600;
+  position: relative;
+}
+
+.portfolio .portfolio-top .portfolio-top-right li a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #42D9E4;
+}
+
+.portfolio .portfolio-top .portfolio-top-right li a.web::before {
+  content: "-";
+  padding: 0 15px;
+}
+
+.portfolio .portfolio-top .portfolio-top-right li a.web::after {
+  content: "";
+  left: 60%;
+  right: 40%;
+  width: 0%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.portfolio .portfolio-top .portfolio-top-right li a.web:hover::after {
+  content: "";
+  left: 35px;
+  right: 0;
+  width: auto;
+}
+/*# sourceMappingURL=style.css.map */
